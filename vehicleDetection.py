@@ -485,7 +485,6 @@ def find_cars(img,
 
     for xb in range(nxsteps):
         for yb in range(nysteps):
-            count += 1
             ypos = yb * cells_per_step
             xpos = xb * cells_per_step
             # Extract HOG for this patch
@@ -740,12 +739,15 @@ def process_img(img):
 '''=======================
     Test Images
 =========================='''
+count = 0
 if make_video == False:
     for img_src in example_images:
         img = cv2.imread(img_src)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         result = process_img(img)
-        show(result, title="found")
+        count += 1
+        title = "result" + str(count)
+        show(result, title=title)
 
 '''=======================
     Video
