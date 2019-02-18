@@ -1,8 +1,19 @@
-# Udacity -- Self Driving Car Nano Degree
 # Vehicle Detection
+Pipeline to detect vehicles from a video stream.
 
-### John Mansell
----
+# What I Learned
+> - Object detection and image classification
+> - HOG Features
+> - Decision Trees
+> 
+> ### Languages
+> Python
+>   - scikit learn
+>   - numpy
+>   - matplotlib
+
+# Video
+[![Vehicle Detection](http://img.youtube.com/vi/gblbnhNevAQ/0.jpg)](https://youtu.be/gblbnhNevAQ "Vehicle Detection")
 
 ## Included Files
 > [vehicleDetection.py](./vehicleDetection.py) -- The script to detect vehicles in the video  
